@@ -7,6 +7,14 @@ GitHub 高分项目日报：每天北京时间 09:00 自动筛选 GitHub 上近�
 GitHub Actions 定时触发 `digest.py` → 调用 GitHub 搜索 API 筛项目 → 通过 SMTP 发 HTML 邮件。
 不依赖任何本地电脑，关机也能跑。
 
+## 去重机制
+
+发出的每个仓库都会记录在 `state.json`，由工作流自动提交回仓库。
+下次运行先跳过这些已发送过的项目，只发新的。候选池（按 star 降序的前 1000 个）轮完后自动清空重新开始。
+
+- 想立刻重发同一批：把 `state.json` 里的 `sent` 清空即可。
+- `state.json` 由机器人账号提交，不需要你本地操作。
+
 ## 必填的 4 个 Secrets
 
 仓库 → Settings → Secrets and variables → Actions → New repository secret：
