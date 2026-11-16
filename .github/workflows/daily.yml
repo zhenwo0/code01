@@ -1,0 +1,32 @@
+name: github-high-score-mail
+
+on:
+  schedule:
+    # UTC 01:00 = 北京时间 09:00
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 发送日报
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          # 可选：调整筛选条件，不填用默认
+          CREATED_DAYS: "7"
+          MIN_STARS: "100"
+          LANGUAGE: ""
+          TOPIC: ""
+          TOP_N: "10"
+        run: python digest.py
