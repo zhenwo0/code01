@@ -95,6 +95,7 @@ def send_mail(host, port, user, password, to, subject, body_html):
 
 
 def main():
+    dry_run = env("DRY_RUN", "0") == "1"
     host = env("SMTP_HOST", "smtp.163.com")
     port = env("SMTP_PORT", "465")
     user = env("SMTP_USER")
@@ -105,7 +106,7 @@ def main():
 
     missing = [k for k, v in (("SMTP_HOST", host), ("SMTP_USER", user),
                               ("SMTP_PASS", password), ("MAIL_TO", to)) if not v]
-    if missing:
+    if missing and not dry_run:
         print("缺少环境变量：" + "、".join(missing))
         return 1
 
@@ -121,6 +122,10 @@ def main():
     print(f"抓到 {len(items)} 条")
     for it in items:
         print(f"  {it['full_name']} star={it['stargazers_count']} lang={it['language']}")
+
+    if dry_run:
+        print("DRY_RUN=1，只抓取不发信")
+        return 0
 
     body = render(items, days, stars)
     subject = f"{prefix} {datetime.date.today().isoformat()}"

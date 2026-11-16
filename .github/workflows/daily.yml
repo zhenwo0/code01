@@ -5,6 +5,11 @@ on:
     # UTC 01:00 = 北京时间 09:00
     - cron: "0 1 * * *"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "只抓取不发信（填 1）"
+        required: false
+        default: "0"
 
 jobs:
   digest:
@@ -23,6 +28,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
+          DRY_RUN: ${{ inputs.dry_run || '0' }}
           # 可选：调整筛选条件，不填用默认
           CREATED_DAYS: "7"
           MIN_STARS: "100"
