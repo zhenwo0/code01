@@ -29,9 +29,10 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           DRY_RUN: ${{ inputs.dry_run || '0' }}
-          # 可选：调整筛选条件，不填用默认
-          CREATED_DAYS: "7"
-          MIN_STARS: "100"
+          # 筛选条件：star 大于 10000，不限语言，按 star 降序
+          # CREATED_DAYS 设为 0 表示不限制创建时间
+          CREATED_DAYS: "0"
+          MIN_STARS: "10000"
           LANGUAGE: ""
           TOPIC: ""
           TOP_N: "10"

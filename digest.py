@@ -27,7 +27,9 @@ def build_query():
     topic = env("TOPIC")
 
     since = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
-    parts = [f"created:>{since}", f"stars:>{stars}"]
+    parts = [f"stars:>{stars}"]
+    if days > 0:
+        parts.append(f"created:>{since}")
     if language:
         parts.append(f"language:{language}")
     if topic:
@@ -55,8 +57,9 @@ def fetch_repos(query, top_n):
 
 
 def render(items, days, stars):
+    scope = f"近 {days} 天新建、" if days > 0 else ""
     if not items:
-        return f"<h3>近 {days} 天新建、star &gt; {stars} 的项目</h3><p>本轮没有符合条件的项目。</p>"
+        return f"<h3>{scope}star &gt; {stars} 的项目</h3><p>本轮没有符合条件的项目。</p>"
 
     rows = []
     for it in items:
@@ -70,9 +73,9 @@ def render(items, days, stars):
         )
 
     return (
-        f"<h3>近 {days} 天新建、star &gt; {stars} 的项目 Top {len(items)}</h3>"
+        f"<h3>{scope}star &gt; {stars} 的项目 Top {len(items)}</h3>"
         f"<ol>{''.join(rows)}</ol>"
-        f"<p style='color:#999;font-size:12px'>由 GitHub Actions 自动生成</p>"
+        f"<p style='color:#999;font-size:12px'>按 star 总数降序，由 GitHub Actions 自动生成</p>"
     )
 
 
