@@ -11,6 +11,13 @@ on:
         required: false
         default: "0"
 
+permissions:
+  contents: write
+
+concurrency:
+  group: github-high-score-mail
+  cancel-in-progress: false
+
 jobs:
   digest:
     runs-on: ubuntu-latest
@@ -37,3 +44,16 @@ jobs:
           TOPIC: ""
           TOP_N: "10"
         run: python digest.py
+
+      - name: 提交已发送记录
+        if: ${{ inputs.dry_run != '1' }}
+        run: |
+          if [ -f state.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state.json
+            git diff --cached --quiet || git commit -m "chore: update sent state"
+            git push
+          else
+            echo "没有 state.json，跳过提交"
+          fi
