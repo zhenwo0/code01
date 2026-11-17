@@ -1,15 +1,25 @@
 {
   "sent": [
+    "996icu/996.ICU",
     "EbookFoundation/free-programming-books",
+    "NousResearch/hermes-agent",
+    "affaan-m/ECC",
+    "awesome-selfhosted/awesome-selfhosted",
     "codecrafters-io/build-your-own-x",
+    "deepseek-ai/deepseek-harness",
     "donnemartin/system-design-primer",
     "freeCodeCamp/freeCodeCamp",
     "jwasham/coding-interview-university",
+    "mattpocock/skills",
     "morluto/rea",
     "nilbuild/developer-roadmap",
+    "obra/superpowers",
     "openclaw/openclaw",
+    "practical-tutorials/project-based-learning",
     "public-apis/public-apis",
-    "sindresorhus/awesome"
+    "sindresorhus/awesome",
+    "trimstray/the-book-of-secret-knowledge",
+    "vinta/awesome-python"
   ],
-  "updated": "2026-11-16T04:33:59"
+  "updated": "2026-11-17T08:44:40"
 }
