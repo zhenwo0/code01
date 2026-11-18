@@ -1,9 +1,12 @@
 {
   "sent": [
     "996icu/996.ICU",
+    "DigitalPlatDev/FreeDomain",
     "EbookFoundation/free-programming-books",
     "NousResearch/hermes-agent",
+    "TheAlgorithms/Python",
     "affaan-m/ECC",
+    "anomalyco/opencode",
     "awesome-selfhosted/awesome-selfhosted",
     "codecrafters-io/build-your-own-x",
     "deepseek-ai/deepseek-harness",
@@ -12,14 +15,21 @@
     "jwasham/coding-interview-university",
     "mattpocock/skills",
     "morluto/rea",
+    "multica-ai/andrej-karpathy-skills",
+    "n8n-io/n8n",
     "nilbuild/developer-roadmap",
     "obra/superpowers",
     "openclaw/openclaw",
+    "ossu/computer-science",
     "practical-tutorials/project-based-learning",
     "public-apis/public-apis",
+    "react/react",
     "sindresorhus/awesome",
+    "torvalds/linux",
     "trimstray/the-book-of-secret-knowledge",
-    "vinta/awesome-python"
+    "vinta/awesome-python",
+    "vuejs/vue",
+    "yt-dlp/yt-dlp"
   ],
-  "updated": "2026-11-17T08:44:40"
+  "updated": "2026-11-18T08:08:30"
 }
