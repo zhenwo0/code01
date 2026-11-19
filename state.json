@@ -1,19 +1,26 @@
 {
   "sent": [
     "996icu/996.ICU",
+    "DietrichGebert/ponytail",
     "DigitalPlatDev/FreeDomain",
     "EbookFoundation/free-programming-books",
     "NousResearch/hermes-agent",
     "TheAlgorithms/Python",
     "affaan-m/ECC",
     "anomalyco/opencode",
+    "anthropics/skills",
+    "avelino/awesome-go",
     "awesome-selfhosted/awesome-selfhosted",
     "codecrafters-io/build-your-own-x",
     "deepseek-ai/deepseek-harness",
     "donnemartin/system-design-primer",
+    "firecrawl/firecrawl",
     "freeCodeCamp/freeCodeCamp",
     "jwasham/coding-interview-university",
+    "massgravel/Microsoft-Activation-Scripts",
     "mattpocock/skills",
+    "microsoft/markitdown",
+    "microsoft/vscode",
     "morluto/rea",
     "multica-ai/andrej-karpathy-skills",
     "n8n-io/n8n",
@@ -25,11 +32,14 @@
     "public-apis/public-apis",
     "react/react",
     "sindresorhus/awesome",
+    "tensorflow/tensorflow",
     "torvalds/linux",
+    "trekhleb/javascript-algorithms",
     "trimstray/the-book-of-secret-knowledge",
+    "ultraworkers/claw-code",
     "vinta/awesome-python",
     "vuejs/vue",
     "yt-dlp/yt-dlp"
   ],
-  "updated": "2026-11-18T08:08:30"
+  "updated": "2026-11-19T08:17:33"
 }
