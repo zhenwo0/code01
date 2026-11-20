@@ -1,10 +1,13 @@
 {
   "sent": [
+    "521xueweihan/HelloGitHub",
     "996icu/996.ICU",
+    "CyC2018/CS-Notes",
     "DietrichGebert/ponytail",
     "DigitalPlatDev/FreeDomain",
     "EbookFoundation/free-programming-books",
     "NousResearch/hermes-agent",
+    "Significant-Gravitas/AutoGPT",
     "TheAlgorithms/Python",
     "affaan-m/ECC",
     "anomalyco/opencode",
@@ -14,8 +17,13 @@
     "codecrafters-io/build-your-own-x",
     "deepseek-ai/deepseek-harness",
     "donnemartin/system-design-primer",
+    "f/prompts.chat",
     "firecrawl/firecrawl",
+    "flutter/flutter",
     "freeCodeCamp/freeCodeCamp",
+    "getify/You-Dont-Know-JS",
+    "github/gitignore",
+    "jackfrued/Python-100-Days",
     "jwasham/coding-interview-university",
     "massgravel/Microsoft-Activation-Scripts",
     "mattpocock/skills",
@@ -26,6 +34,8 @@
     "n8n-io/n8n",
     "nilbuild/developer-roadmap",
     "obra/superpowers",
+    "ohmyzsh/ohmyzsh",
+    "ollama/ollama",
     "openclaw/openclaw",
     "ossu/computer-science",
     "practical-tutorials/project-based-learning",
@@ -41,5 +51,5 @@
     "vuejs/vue",
     "yt-dlp/yt-dlp"
   ],
-  "updated": "2026-11-19T08:17:33"
+  "updated": "2026-11-20T07:58:10"
 }
