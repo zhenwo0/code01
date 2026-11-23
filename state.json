@@ -31,10 +31,14 @@
     "firecrawl/firecrawl",
     "flutter/flutter",
     "freeCodeCamp/freeCodeCamp",
+    "garrytan/gstack",
     "getify/You-Dont-Know-JS",
     "github/gitignore",
     "github/spec-kit",
+    "golang/go",
+    "harry0703/MoneyPrinterTurbo",
     "huggingface/transformers",
+    "iptv-org/iptv",
     "jackfrued/Python-100-Days",
     "jlevy/the-art-of-command-line",
     "jwasham/coding-interview-university",
@@ -43,6 +47,7 @@
     "langgenius/dify",
     "massgravel/Microsoft-Activation-Scripts",
     "mattpocock/skills",
+    "microsoft/PowerToys",
     "microsoft/markitdown",
     "microsoft/vscode",
     "morluto/rea",
@@ -60,6 +65,7 @@
     "practical-tutorials/project-based-learning",
     "public-apis/public-apis",
     "react/react",
+    "ripienaar/free-for-dev",
     "sindresorhus/awesome",
     "tensorflow/tensorflow",
     "torvalds/linux",
@@ -67,9 +73,13 @@
     "trimstray/the-book-of-secret-knowledge",
     "twbs/bootstrap",
     "ultraworkers/claw-code",
+    "vercel/next.js",
     "vinta/awesome-python",
     "vuejs/vue",
-    "yt-dlp/yt-dlp"
+    "x1xhlol/system-prompts-and-models-of-ai-tools",
+    "yangshun/tech-interview-handbook",
+    "yt-dlp/yt-dlp",
+    "ytdl-org/youtube-dl"
   ],
-  "updated": "2026-11-22T07:40:47"
+  "updated": "2026-11-23T08:30:49"
 }
