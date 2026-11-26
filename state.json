@@ -1,5 +1,6 @@
 {
   "sent": [
+    "2dust/v2rayN",
     "521xueweihan/HelloGitHub",
     "996icu/996.ICU",
     "AUTOMATIC1111/stable-diffusion-webui",
@@ -13,6 +14,7 @@
     "Graphify-Labs/graphify",
     "Hack-with-Github/Awesome-Hacking",
     "JuliusBrussee/caveman",
+    "Leonxlnx/taste-skill",
     "NousResearch/hermes-agent",
     "Shubhamsaboo/awesome-llm-apps",
     "Significant-Gravitas/AutoGPT",
@@ -20,6 +22,7 @@
     "TauricResearch/TradingAgents",
     "TheAlgorithms/Python",
     "VoltAgent/awesome-design-md",
+    "addyosmani/agent-skills",
     "affaan-m/ECC",
     "airbnb/javascript",
     "anomalyco/opencode",
@@ -27,6 +30,7 @@
     "anthropics/skills",
     "avelino/awesome-go",
     "awesome-selfhosted/awesome-selfhosted",
+    "browser-use/browser-use",
     "clash-verge-rev/clash-verge-rev",
     "codecrafters-io/build-your-own-x",
     "deepseek-ai/deepseek-harness",
@@ -44,12 +48,16 @@
     "ggml-org/llama.cpp",
     "github/gitignore",
     "github/spec-kit",
+    "godotengine/godot",
     "golang/go",
     "harry0703/MoneyPrinterTurbo",
     "huggingface/transformers",
+    "immich-app/immich",
     "iptv-org/iptv",
     "jackfrued/Python-100-Days",
+    "jaywcjlove/awesome-mac",
     "jlevy/the-art-of-command-line",
+    "justjavac/free-programming-books-zh_CN",
     "jwasham/coding-interview-university",
     "krahets/hello-algo",
     "kubernetes/kubernetes",
@@ -64,6 +72,7 @@
     "microsoft/markitdown",
     "microsoft/vscode",
     "morluto/rea",
+    "mrdoob/three.js",
     "msitarzewski/agency-agents",
     "multica-ai/andrej-karpathy-skills",
     "n8n-io/n8n",
@@ -88,6 +97,7 @@
     "sindresorhus/awesome",
     "stablyai/orca",
     "tensorflow/tensorflow",
+    "thedotmack/claude-mem",
     "torvalds/linux",
     "trekhleb/javascript-algorithms",
     "trimstray/the-book-of-secret-knowledge",
@@ -101,5 +111,5 @@
     "yt-dlp/yt-dlp",
     "ytdl-org/youtube-dl"
   ],
-  "updated": "2026-11-25T09:27:23"
+  "updated": "2026-11-26T09:05:55"
 }
